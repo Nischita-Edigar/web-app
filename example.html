@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Two Cards Example</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="card-container1">
+  <div class="cardone">
+      <img src="./images/webdev.jpg" alt="Image 2">
+      <h2 style="color: indigo;">Web Development</h2>
+      <span>3 Months Live Online Classes</span>
+      <div><button type="submit" class="blue" style="padding-top: 10px; margin-top: 10px; color: white;
+        background-color: rgb(21, 21, 100);
+        transition: 0.7s ease;
+        cursor: pointer; text-align: center; justify-content: center;"  id="submit" onclick="redirectToNextPages()">Enroll Now</button>
+      </div>
+      <p>This program includes Java Full Stack and Python Full Stack.</p>
+      <p style="color: darkblue;">Attend Free Scholarship test and get upto 50% off.</p>
+
+    </div>
+    <div class="cardone">
+      <img src="./images/ds.png" alt="Image 1">
+      <h2 style="color: indigo;">Data Science</h2>
+      <span>3 Months Live Online Classes </span>
+      <div><button type="submit" class="blue" style="padding-top: 10px; margin-top: 10px; color: white;
+        background-color: rgb(21, 21, 100);
+        transition: 0.7s ease;
+        cursor: pointer; text-align: center; justify-content: center;"  id="submit" onclick="redirectToNextPage()">Enroll Now</button>
+      </div>    
+      
+      <p>This Program includes Data science from basics to advance.</p>
+      <p>Attend Free Scholarship test and get upto 50% off.</p>
+
+    </div>
+  </div>
+  <style>
+    body {
+    margin: 0;
+    padding: 0;
+  }
+  .card-container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: center;
+  } 
+  .cardone {
+    width: 55%; /* Adjust this value to set the desired width for each card */
+    max-width: 300px;
+    margin: 10px;
+    padding: 50px;
+    box-shadow: 0 4px 8px rgba(2, 2, 2, 0.1);
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .cardone img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+   justify-content: center;
+   text-align: center;
+   
+  }
+  .cardone h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .cardone p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .cardone:hover {
+      box-shadow: 0 8px 16px rgba(2, 2, 2, 0.2);
+      transform: scale(1.05);
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+    
+  </style>
+  <script>
+    function redirectToNextPage() {
+      // Replace "next-page-url" with the URL of the next page you want to redirect to
+      window.location.href = "./index.html";
+    }
+  </script>
+   <script>
+    function redirectToNextPages() {
+      // Replace "next-page-url" with the URL of the next page you want to redirect to
+      window.location.href = "./index.html";
+    }
+  </script>
+</body>
+</html>
+
+
